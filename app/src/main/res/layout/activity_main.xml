@@ -55,6 +55,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="startQRScanOrientation"/>
+        android:onClick="startQRScanOrientation"
+        android:clickable="false"
+        android:enabled="false"/>
 
 </android.support.constraint.ConstraintLayout>
