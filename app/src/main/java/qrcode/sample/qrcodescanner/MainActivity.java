@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
             } else {
                 //if qr contains data
+
+                Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
                 textViewScanResult.setText(result.getContents());
             }
         } else {
@@ -47,7 +49,32 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void startQRScan(View view) {
+    /**
+     * 默认横向启动扫描页画
+     * @param view
+     */
+    public void startQRScanHorizonal(View view) {
+        qrScan.initiateScan();
+    }
+
+    /**
+     * 启动纵向扫描页面
+     * @param view
+     */
+    public void startQRScanVertical(View view) {
+        new IntentIntegrator(this).setCaptureActivity(ToolbarCaptureActivity.class).initiateScan();
+    }
+
+//    public void scanContinuous(View view) {
+//        Intent intent = new Intent(this, ContinuousCaptureActivity.class);
+//        startActivity(intent);
+//    }
+
+    /**
+     * 扫描页面可以横竖屏转换
+     * @param view
+     */
+    public void startQRScanOrientation(View view) {
         qrScan.initiateScan();
     }
 }

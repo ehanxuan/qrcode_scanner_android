@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="qrcode.sample.qrcodescanner.ToolbarCaptureActivity">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_description"
+        app:zxing_use_texture_view="true"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#f0ede3"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:text="Scan QR Code"/>
+
+</RelativeLayout>

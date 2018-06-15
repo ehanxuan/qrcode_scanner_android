@@ -13,22 +13,48 @@
         android:layout_height="0dp"
         android:layout_margin="16dp"
         android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@+id/button_scan"
+        app:layout_constraintBottom_toTopOf="@+id/button_scan_horizonal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/button_scan"
+    <Button
+        android:id="@+id/button_scan_horizonal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="SCAN QR CODE (HORIZONAL)"
+        app:layout_constraintBottom_toTopOf="@+id/button_scan_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="startQRScanHorizonal"/>
+
+    <Button
+        android:id="@+id/button_scan_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="SCAN QR CODE (VERTICAL)"
+        app:layout_constraintBottom_toTopOf="@+id/button_scan_orientation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="startQRScanVertical"/>
+
+    <Button
+        android:id="@+id/button_scan_orientation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:text="SCAN QR CODE"
+        android:text="SCAN QR CODE (ORIENTATION)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="startQRScan"/>
+        android:onClick="startQRScanOrientation"/>
 
 </android.support.constraint.ConstraintLayout>
