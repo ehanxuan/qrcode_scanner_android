@@ -10,6 +10,8 @@ import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import qrcode.sample.qrcodescanner.zxing.ToolbarCaptureActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     //View Objects

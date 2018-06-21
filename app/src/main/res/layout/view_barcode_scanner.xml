@@ -9,12 +9,11 @@
         app:zxing_framing_rect_width="250dp"
         app:zxing_framing_rect_height="250dp"/>
 
-    <qrcode.sample.qrcodescanner.view.ZxingViewFinder
+    <qrcode.sample.qrcodescanner.zxing.view.ZxingViewFinder
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/zxing_viewfinder_view"
         app:zxing_possible_result_points="@color/zxing_possible_result_points"
-        app:zxing_viewfinder_laser="@color/clear"
         app:zxing_viewfinder_mask="@color/zxing_custom_viewfinder_mask"/>
 
     <!--<TextView-->

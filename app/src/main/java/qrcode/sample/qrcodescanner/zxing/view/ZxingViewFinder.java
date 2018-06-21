@@ -1,4 +1,4 @@
-package qrcode.sample.qrcodescanner.view;
+package qrcode.sample.qrcodescanner.zxing.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
